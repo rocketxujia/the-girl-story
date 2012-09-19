@@ -1,0 +1,38 @@
+@articleColor1:      #D8D0B8;
+@articleColor2:      #B9BEA8;
+@articleColor3:      #BDB1B1;
+@articleColor4:      #a5b5bc;        //
+@articleColor5:      @lightpurple;
+@articleColor6:      #D2CBC3;  //
+@articleColor7:      @lightpink;
+@articleColor8:      @lightorange;
+@articleColor9:      @lightgreen;      //
+@articleColor10:     @lightred;
+
+#articleBg{
+    .createBg(@color){
+        (~".@{color}"){
+            background: @@color;
+            .text-shadow (0 1px 1px lighten( @@color, 15%) );
+        }
+        (~".@{color} .thumbnail  a, .@{color} .hero  a"){
+            background: lighten( @@color, 10%);
+        }
+        (~".@{color} .thumbnail a:hover, .@{color} .hero  a:hover"){
+            background: darken( @@color, 10%);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
