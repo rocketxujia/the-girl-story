@@ -44,39 +44,5 @@
 
 <?php get_footer(); ?>
 
-
-<script src="<?php bloginfo('template_directory'); ?>/_/js/jquery-1.7.1.min.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/_/js/jquery.masonry.min.js"></script>
-
-<!-- Add fancyBox main JS and CSS files -->
-<script type="text/javascript"
-        src="<?php bloginfo('template_directory'); ?>/_/js/fancybox/jquery.fancybox.js?v=2.1.0"></script>
-<link rel="stylesheet" type="text/css"
-      href="<?php bloginfo('template_directory'); ?>/_/js/fancybox/jquery.fancybox.css?v=2.1.0" media="screen"/>
-<!-- Add Button helper (this is optional) -->
-<link rel="stylesheet" type="text/css"
-      href="<?php bloginfo('template_directory'); ?>/_/js/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.3"/>
-<script type="text/javascript"
-        src="<?php bloginfo('template_directory'); ?>/_/js/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.3"></script>
-
-<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/_/js/init.js"></script>
-
-<!-- Asynchronous google analytics; this is the official snippet.
-     Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.
-<script>
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-XXXXXX-XX']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
--->
-
 </body>
 </html>
