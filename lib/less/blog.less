@@ -12,18 +12,22 @@ header {
         top: 0;
         margin-left: 760px;
         padding-left: 18px;
-        background: url(../img/header-title2.png) no-repeat 0 0;
+        background: url(../img/header-title3.png) no-repeat 0 0;
         .logo {
             height: 400px;
             display: block;
             text-indent: -9999px;
             cursor: pointer;
+        }
+        .mine{
+            position: absolute;
+            width:104px;
+            height:104px;
+            top:31px;
+            left:29px;
 
-            .mine{
-                float: left;
-                width:104px;
-                height:104px;
-                margin: 31px 0 0 11px;
+            img{
+                display: block;
                 .border-radius(52px)
             }
         }
@@ -170,7 +174,7 @@ article {
     }
 }
 
-.single-format-gallery {
+.single-post {
     .gallery-size-hero{
         .gallery-item {
             margin: 0 0 @marginWidth*(5/4) 0;
@@ -192,7 +196,7 @@ article {
 
 // foot
 footer{
-    background: #F0ECE7;
+    background: @bodyBackground;
     .span23{
         .container();
     }

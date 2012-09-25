@@ -110,10 +110,12 @@
 
 <body <?php body_class(); ?>>
 <header>
-    <div class="header-c">
-        <a class="logo" href="#">
-            <img class="mine" alt="我的头像" src="http://girlwithacamera.co.uk/wp-content/themes/girl-with-a-camera/thumb.php?src=http://girlwithacamera.co.uk/wp-content/uploads/2012/09/DM4C7331.jpg&amp;w=112&amp;h=112&amp;zc=1&amp;q=95" />
+    <div class="header-c gallery-icon">
+        <a class="logo" href="<?php bloginfo('url'); ?>/" >
             徐欣然的多彩生活
+        </a>
+        <a class="mine" href="<?php bloginfo('template_directory'); ?>/lib/img/me-large.png" >
+            <img alt="我的头像" src="<?php bloginfo('template_directory'); ?>/lib/img/me.png" />
         </a>
         <!--<nav>
             <ul>

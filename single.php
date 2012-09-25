@@ -1,8 +1,7 @@
 <?php get_header(); ?>
 
-<?php $postIndex = rand(0, 9) ?>
-<?php if (have_posts()) : while (have_posts()) : the_post();  $attacheInfo = getAttachmentsForHeroesById( get_the_ID() ); ?>
-<article class=" full articleColor<?php echo($postIndex) ?> ">
+<?php if (have_posts()) : while (have_posts()) : the_post(); $postId = get_the_ID();  $attacheInfo = getImagesForHeroesById( $postId ); $postId = $postId % 10 ?>
+<article class=" full articleColor<?php echo($postId) ?> ">
     <div class="divider-top">&nbsp;</div>
     <div class="container">
         <div class="span23">

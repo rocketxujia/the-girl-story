@@ -46,10 +46,10 @@
     /**
      * Prints HTML with meta information for the current post—date/time and author.
      */
-    if ( ! function_exists( 'getAttachmentsInfoById' ) ) :
-        function getAttachmentsInfoById( $id = 0 ) {
+    if ( ! function_exists( 'getImagesInfoById' ) ) :
+        function getImagesInfoById( $id = 0 ) {
             $post_id = intval( $id );
-            $args = array( 'post_type' => 'attachment', 'numberposts' => -1, 'post_status' => null, 'post_parent' => $post_id, 'order'=> 'ASC', 'orderby'=> 'post_date' );
+            $args = array( 'post_type' => 'attachment', 'numberposts' => -1, 'post_status' => null, 'post_mime_type'=> 'image', 'post_parent' => $post_id, 'order'=> 'ASC', 'orderby'=> 'post_date' );
             $attachments = get_posts($args);
             $num = count($attachments);
             $getArticleClass = (rand()%2==0)?"full":"";
@@ -68,39 +68,39 @@
                     break;
                 case 2:
                     $getArticleClass = '';
-                    $gallery_size_masonry = getmasonryTemplate($post_id, $attachments, getRandColsClasses($num) );
+                    $gallery_size_masonry = getmasonryTemplate($post_id, $attachments, getRandColsClasses( $attachments, $num) );
                     break;
                 case 3:
                 case 4:
                     $getArticleClass = '';
                     $gallery_size_hero = getHeroTemplate($post_id, $attachments[0]);
                     array_shift($attachments);
-                    $gallery_size_masonry = getmasonryTemplate($post_id, $attachments, getRandColsClasses($num) );
+                    $gallery_size_masonry = getmasonryTemplate($post_id, $attachments, getRandColsClasses( $attachments, $num) );
                     break;
                 case 5:
                     $gallery_size_hero = getHeroTemplate($post_id, $attachments[0]);
                     array_shift($attachments);
-                    $gallery_size_masonry = getmasonryTemplate($post_id, $attachments, getRandColsClasses($num) );
+                    $gallery_size_masonry = getmasonryTemplate($post_id, $attachments, getRandColsClasses( $attachments, $num) );
                     break;
                 default:
                     $getArticleClass = 'full';
                     $gallery_size_hero = getHeroTemplate($post_id, $attachments[0]);
                     array_shift($attachments);
-                    $gallery_size_masonry = getmasonryTemplate($post_id, $attachments, getRandColsClasses($num) );
+                    $gallery_size_masonry = getmasonryTemplate($post_id, $attachments, getRandColsClasses( $attachments, $num) );
                     break;
             }
 
             return array( '$getArticleClass' => $getArticleClass, '$gallery_size_hero' => $gallery_size_hero, '$gallery_size_masonry' => $gallery_size_masonry, '$gallery_size_heroes' => $gallery_size_heroes );
         }
 
-        function getAttachmentsForHeroesById( $id = 0 ) {
+        function getImagesForHeroesById( $id = 0 ) {
             $post_id = intval( $id );
 
-            $args = array( 'post_type' => 'attachment', 'numberposts' => -1, 'post_status' => null, 'post_parent' => $post_id, 'order'=> 'ASC', 'orderby'=> 'post_date' );
+            $args = array( 'post_type' => 'attachment', 'numberposts' => -1, 'post_status' => null, 'post_mime_type'=> 'image', 'post_parent' => $post_id, 'order'=> 'ASC', 'orderby'=> 'post_date' );
             $attachments = get_posts($args);
             $num = count($attachments);
 
-            $gallery_size_heroes = getHeroesTemplate($post_id, $attachments, getRandColsClasses($num) );
+            $gallery_size_heroes = getHeroesTemplate($post_id, $attachments );
 
             return array( '$gallery_size_heroes' => $gallery_size_heroes );
         }
@@ -151,12 +151,15 @@
                         </div>' , 'girl_with_colorful_life' ) ;
         }
 
-    function getRandColsClasses( $num = 0 ){
+    function getRandColsClasses( $attachments, $num = 0 ){
         $classes = array();
         $canCol2 = true;
         $i = 0;
         while($i<$num){
-            if(rand()%2==0 && $canCol2 ){
+            $attachment_id = $attachments[$i]->ID;
+            $image = wp_get_attachment_image_src( $attachment_id, 'masonry' );
+            $isHorizon = $image[1] >= $image[2];
+            if(rand()%2==0 && $canCol2 && $isHorizon){
                 $classes[$i] = 'col2';
             }else{
                 $classes[$i] = 'col1';
@@ -177,7 +180,6 @@
     add_image_size( 'masonry', 154, 'auto' ); //154 pixels wide (and unlimited height)
     /*add_image_size( 'three', 526, 'auto' ); //154 pixels wide (and unlimited height) --
     add_image_size( 'second', 344, 'auto' ); //154 pixels wide (and unlimited height) (154 + 8 + 20 ) * n -20 = 182 * n - 20*/
-
 
     /**
      * 解析出 文章信息介绍行的html片段.
