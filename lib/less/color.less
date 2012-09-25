@@ -1,27 +1,31 @@
-@articleColor0:      #D8D0B8;
-@articleColor1:      #B9BEA8;
-@articleColor2:      #BDB1B1;
-@articleColor3:      #a5b5bc;        //
-@articleColor4:      @lightpurple;
-@articleColor5:      #D2CBC3;  //
-@articleColor6:      @lightpink;
-@articleColor7:      @lightorange;
-@articleColor8:      @lightgreen;      //
-@articleColor9:     @lightred;
+@articleColor0: #D8D0B8;
+@articleColor1: #B9BEA8;
+@articleColor2: #BDB1B1;
+@articleColor3: #a5b5bc;
+//
+@articleColor4: @lightpurple;
+@articleColor5: #D2CBC3;
+//
+@articleColor6: @lightpink;
+@articleColor7: @lightorange;
+@articleColor8: @lightgreen;
+//
+@articleColor9: @lightred;
 
-#articleBg{
+#articleBg {
     .createBg(@color){
-        (~".@{color}"){
-            background: @@color;
-            .text-shadow (0 1px 1px lighten( @@color, 15%) );
+        (~".@{color}") {
+            background-color: @@color;
+            .text-shadow(0 1 px 1 px lighten(@@color, 15%))
+        ;
         }
-        (~".@{color} .gallery-item"){
-            background: lighten( @@color, 10%);
+        (~".@{color} .gallery-item") {
+            background-color: lighten(@@color, 10%);
             .box-shadow( 0 1px 5px #666 );
             .transition( background 0.2s ease-in );
         }
-        (~".@{color} .gallery-item:hover"){
-            background: darken( @@color, 10%);
+        (~".@{color} .gallery-item:hover") {
+            background-color: darken(@@color, 10%);
             .box-shadow( 0 1px 7px #333 );
         }
     }

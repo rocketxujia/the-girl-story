@@ -1,8 +1,12 @@
+.blog {
+    background: url(../img/pattern.png) 0 0 repeat;
+}
+
 // header
 header {
     position: relative;
     width: 960px;
-    min-height:100%;
+    min-height: 100%;
     .container-fixed();
 
     .header-c {
@@ -12,21 +16,21 @@ header {
         top: 0;
         margin-left: 760px;
         padding-left: 18px;
-        background: url(../img/header-title3.png) no-repeat 0 0;
+        background: url(../img/header-title2.png) no-repeat 0 0;
         .logo {
             height: 400px;
             display: block;
             text-indent: -9999px;
             cursor: pointer;
         }
-        .mine{
+        .mine {
             position: absolute;
-            width:104px;
-            height:104px;
-            top:31px;
-            left:29px;
+            width: 104px;
+            height: 104px;
+            top: 31px;
+            left: 29px;
 
-            img{
+            img {
                 display: block;
                 .border-radius(52px)
             }
@@ -41,61 +45,64 @@ header {
     font-size: 1px;
     overflow: hidden;
 }
+
 .divider-top {
     background: url('../img/divider.png') repeat-x 0 -1px;
 }
+
 .divider-bottom {
     background: url('../img/divider.png') repeat-x 0 0;
 }
 
 // ����
 article {
-    img{
+    background: url('../img/pattern.png') repeat 0 0;
+
+    img {
         max-width: 100%;
     }
-    .container{
+    .container {
         overflow: hidden;
         padding-top: @paddingWidth *2;
     }
-    .gallery{
+    .gallery {
         margin-bottom: @marginWidth;
 
-        img{
+        img {
             display: block;
             margin: 0 auto;
         }
-        a{
+        a {
             display: block;
         }
-        br{
+        br {
             content: " 0020";
             display: block;
             height: 0;
             overflow: hidden;
         }
         .gallery-item {
-            .gallery-icon{
+            .gallery-icon {
 
             }
-            .gallery-caption{
-                width:100%;
+            .gallery-caption {
+                width: 100%;
                 line-height: 1.2;
                 text-align: center;
                 margin: @marginWidth/2 0 0 0;
             }
         }
     }
-    .gallery-size-hero{
+    .gallery-size-hero {
         float: left;
         margin-bottom: 0;
 
         .gallery-item {
             padding: @paddingWidth;
 
-            .gallery-icon{
-                // 712px
+            .gallery-icon { // 712px
             }
-            .gallery-caption{
+            .gallery-caption {
                 font-size: 13px;
             }
         }
@@ -114,28 +121,28 @@ article {
             margin: 0 @marginWidth*(5/4) @marginWidth*(5/4) 0;
             padding: @paddingWidth/2;
 
-            .gallery-icon{
+            .gallery-icon {
 
             }
-            .gallery-caption{
+            .gallery-caption {
                 font-size: 12px;
             }
         }
         .col2 {
-            width:336px;
+            width: 336px;
         }
     }
     &.full .gallery-size-masonry {
         width: 100%;
-        /*.col3 {
-            width:518px;
-        }*/
+    /*.col3 {
+        width:518px;
+    }*/
     }
-    section{
+    section {
         float: left;
         width: 364px;
 
-        header{
+        header {
             width: auto;
             overflow: hidden;
         }
@@ -146,7 +153,7 @@ article {
             line-height: 1.8;
             font-size: 14px;
         }
-        footer{
+        footer {
             width: 100%;
             margin-bottom: 15px;
             padding-top: 12px;
@@ -154,7 +161,7 @@ article {
             background: url('../img/divider-dashed.png') repeat-x 0 0;
             .clearfix();
 
-            time{
+            time {
                 float: left;
                 display: inline;
                 margin-right: 10px;
@@ -175,7 +182,7 @@ article {
 }
 
 .single-post {
-    .gallery-size-hero{
+    .gallery-size-hero {
         .gallery-item {
             margin: 0 0 @marginWidth*(5/4) 0;
         }
@@ -194,17 +201,30 @@ article {
 #articleBg > .createBg("articleColor8");
 #articleBg > .createBg("articleColor9");
 
+// 翻页
+#infscr-loading {
+    padding: @marginWidth 0px;
+    font-size: 18px;
+    * {
+        display: inline;
+        margin-right: 12px;
+    }
+}
+
+#infiniteScrollStart {
+    display: none;
+}
+
 // foot
-footer{
-    background: @bodyBackground;
-    .span23{
+footer {
+    .span23 {
         .container();
     }
-    .inner{
+    .inner {
         padding: @paddingWidth*3 0;
         .clearfix();
 
-        .logo-footer{
+        .logo-footer {
             float: left;
             display: inline;
             font: 36px/1em Nevis, Arial, Helvetica, Geneva, sans-serif;
