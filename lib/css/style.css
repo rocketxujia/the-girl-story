@@ -212,7 +212,7 @@ body {
   font-size: 14px;
   line-height: 1.5;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #f0ece7;
 }
 a {
   color: #333333;
@@ -785,7 +785,7 @@ header .header-c {
   top: 0;
   margin-left: 760px;
   padding-left: 18px;
-  background: url(../img/header-title2.png) no-repeat 0 0;
+  background: url(../img/header-title3.png) no-repeat 0 0;
 }
 header .header-c .logo {
   height: 400px;
@@ -793,11 +793,15 @@ header .header-c .logo {
   text-indent: -9999px;
   cursor: pointer;
 }
-header .header-c .logo .mine {
-  float: left;
+header .header-c .mine {
+  position: absolute;
   width: 104px;
   height: 104px;
-  margin: 31px 0 0 11px;
+  top: 31px;
+  left: 29px;
+}
+header .header-c .mine img {
+  display: block;
   -webkit-border-radius: 52px;
   -moz-border-radius: 52px;
   border-radius: 52px;
@@ -944,7 +948,7 @@ article section footer .comments-link {
 article.full section {
   width: 100%;
 }
-.single-format-gallery .gallery-size-hero .gallery-item {
+.single-post .gallery-size-hero .gallery-item {
   margin: 0 0 20px 0;
 }
 .articleColor0 {
@@ -1258,7 +1262,7 @@ article.full section {
   box-shadow: 0 1px 7px #333333;
 }
 footer {
-  background: #F0ECE7;
+  background: #f0ece7;
 }
 footer .span23 {
   margin-left: auto;

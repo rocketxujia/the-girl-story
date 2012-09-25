@@ -2,3 +2,5 @@
 /css/screen.css
 *.db
 .idea
+*.bak
+cache/

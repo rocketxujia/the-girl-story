@@ -31,6 +31,15 @@
 
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/lib/js/init.js"></script>
 
+<?php
+/* Always have wp_footer() just before the closing </body>
+     * tag of your theme, or you will break many plugins, which
+     * generally use this hook to reference JavaScript files.
+     */
+
+wp_footer();
+?>
+
 <!-- Asynchronous google analytics; this is the official snippet.
      Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.
 <script>
