@@ -6,8 +6,6 @@
                 <strong>life</strong></a></div>
             <nav>
                 <ul id="menu-footer-nav" class="menu">
-                    <li id="menu-item-10" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10">
-                        <a href="#girlwithacamera.co.uk/archive/">Archive</a></li>
                     <li><a href="#girlwithacamera.co.uk/about/">About</a></li>
                     <li><a href="#girlwithacamera.co.uk/contact/">Contact</a></li>
                     <li><a href="/feed">RSS Feed</a></li>

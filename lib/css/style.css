@@ -234,8 +234,7 @@ body {
     font-size: 14px;
     line-height: 1.5;
     color: #333333;
-    background: url(../img/pattern.png) 0 0 repeat;
-    background-color: #dad3ca;
+    background: url(../img/bg.jpg) 0 0 repeat;
 }
 
 a {
@@ -940,10 +939,6 @@ cite {
     font-style: normal;
 }
 
-body {
-    background: url(../img/pattern.png) 0 0 repeat;
-}
-
 header {
     position: relative;
     width: 960px;
@@ -1018,7 +1013,7 @@ header .header-c .mine img {
 }
 
 article {
-    background: url('../img/pattern.png') repeat 0 0;
+    background: url('../img/pattern.png') #ebe8e5 repeat 0 0;
 }
 
 article img {
@@ -1519,13 +1514,20 @@ article.full section {
     font-size: 18px;
 }
 
-#infscr-loading * {
+#infscr-loading div {
     display: inline;
     margin-right: 12px;
 }
 
 #infiniteScrollStart {
     display: none;
+}
+
+.comment {
+    /*a[href=http:\/\/www.uyan.cc\/]{
+        display: none;
+    }*/
+
 }
 
 .comment .span23 {
