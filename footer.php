@@ -41,6 +41,8 @@
 
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/lib/js/init.js"></script>
 
+<script type="text/javascript" id="UYScript" src="http://v1.uyan.cc/js/iframe.js?UYUserId=1689138" async=""></script>
+
 <?php
 /* Always have wp_footer() just before the closing </body>
      * tag of your theme, or you will break many plugins, which

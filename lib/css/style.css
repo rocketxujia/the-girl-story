@@ -234,6 +234,7 @@ body {
     font-size: 14px;
     line-height: 1.5;
     color: #333333;
+    background: url(../img/pattern.png) 0 0 repeat;
     background-color: #dad3ca;
 }
 
@@ -939,7 +940,7 @@ cite {
     font-style: normal;
 }
 
-.blog {
+body {
     background: url(../img/pattern.png) 0 0 repeat;
 }
 
@@ -1525,6 +1526,10 @@ article.full section {
 
 #infiniteScrollStart {
     display: none;
+}
+
+.comment .span23 {
+    padding: 16px 0px;
 }
 
 footer .span23 {
