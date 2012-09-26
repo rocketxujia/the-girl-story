@@ -2,7 +2,7 @@
     <div class="divider-top">&nbsp;</div>
     <div class="container">
         <div class="inner span23">
-            <div class="logo-footer"><a href="#girlwithacamera.co.uk"><strong>Girl</strong> <span>With A colorful</span>
+            <div class="logo-footer"><a href="<?php bloginfo('url'); ?>/"><strong>Girl</strong> <span>With A colorful</span>
                 <strong>life</strong></a></div>
             <nav>
                 <ul id="menu-footer-nav" class="menu">
