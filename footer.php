@@ -39,7 +39,10 @@
 
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/lib/js/init.js"></script>
 
+<!-- UY BEGIN -->
 <script type="text/javascript" id="UYScript" src="http://v1.uyan.cc/js/iframe.js?UYUserId=1689138" async=""></script>
+<script language="javascript" charset="utf-8" src="http://v1.uyan.cc/js/countFrame.js" defer></script>  <!--获取评论量 添加-->
+<!-- UY END -->
 
 <?php
 /* Always have wp_footer() just before the closing </body>

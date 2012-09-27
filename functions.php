@@ -189,9 +189,7 @@
             printf( __( '<footer><time datetime="%1$s"><a href="%2$s"><span>%1$s</span></a></time>', 'girl_with_colorful_life' ),
                 get_the_time('Y/m/d'),
                 get_permalink());
-            echo(__('<div class="comments-link">'));
-            comments_popup_link('暂无评论', '1条评论', '%条评论','noclass','评论失效内容');
-            echo(__('</div></footer>'));
+            echo(__('<div class="comments-link"> <a href="'.get_permalink().'" uyan_identify="true" >0条评论</a></div></footer>'));
         }
     endif;
 
