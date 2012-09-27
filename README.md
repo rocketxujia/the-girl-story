@@ -5,7 +5,7 @@ wordpress 博客的模板主题 ，可查看在线博客<http://www.xjsxj.com/gi
 
 ## 主题截屏：
 
-![程序截图](https://raw.github.com/rocketxujia/the-girl-story/master/lib/img/screeshot.jpg)  
+![程序截图](https://raw.github.com/rocketxujia/the-girl-story/master/lib/img/screenshot.jpg)  
 
 ## 功能：
 1. 多彩的颜色背景： 
