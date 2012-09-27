@@ -3,7 +3,7 @@
 <?php if (have_posts()) : while (have_posts()) : the_post();
     $postId = get_the_ID();
     $attacheInfo = getImagesForHeroesById($postId);
-    $postId = $postId % 10 ?>
+    $postId = $postId % 6 ?>
 <article class=" full articleColor<?php echo($postId) ?> ">
     <div class="divider-top">&nbsp;</div>
     <div class="container">

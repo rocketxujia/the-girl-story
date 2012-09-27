@@ -4,7 +4,7 @@
     <?php if (have_posts()) : while (have_posts()) : the_post();
     $postId = get_the_ID();
     $attacheInfo = getImagesInfoById($postId);
-    $postId = $postId % 10; ?>
+    $postId = $postId % 6; ?>
     <article class="articleColor<?php echo($postId . ' ' . $attacheInfo['$getArticleClass']) ?> ">
         <div class="divider-top">&nbsp;</div>
         <div class="container">
