@@ -30,7 +30,7 @@
 
 <?php endif; ?>
 
-<section class="comment">
+<section id="comment" class="comment">
     <div class="divider-top">&nbsp;</div>
     <div class="container">
         <div class="span23">

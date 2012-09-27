@@ -189,7 +189,7 @@
             printf( __( '<footer><time datetime="%1$s"><a href="%2$s"><span>%1$s</span></a></time>', 'girl_with_colorful_life' ),
                 get_the_time('Y/m/d'),
                 get_permalink());
-            echo(__('<div class="comments-link"> <a href="'.get_permalink().'" uyan_identify="true" >0条评论</a></div></footer>'));
+            echo(__('<div class="comments-link"> <a href="'.get_permalink().'#comment" uyan_identify="true" >0条评论</a></div></footer>'));
         }
     endif;
 
