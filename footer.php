@@ -26,7 +26,7 @@
 
 <!-- Add fancyBox main JS and CSS files -->
 <script type="text/javascript"
-        src="<?php bloginfo('template_directory'); ?>/lib/js/fancybox/jquery.fancybox.js?v=2.1.0"></script>
+        src="<?php bloginfo('template_directory'); ?>/lib/js/fancybox/jquery.fancybox.pack.js?v=2.1.0"></script>
 <link rel="stylesheet" type="text/css"
       href="<?php bloginfo('template_directory'); ?>/lib/js/fancybox/jquery.fancybox.css?v=2.1.0" media="screen"/>
 <!-- Add Button helper (this is optional) -->
@@ -35,7 +35,7 @@
 <script type="text/javascript"
         src="<?php bloginfo('template_directory'); ?>/lib/js/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.3"></script>
 
-<script src="<?php bloginfo('template_directory'); ?>/lib/js/infinite-scroll/jquery.infinitescroll.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/lib/js/infinite-scroll/jquery.infinitescroll.min.js"></script>
 
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/lib/js/init.js"></script>
 
