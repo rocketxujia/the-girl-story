@@ -30,3 +30,20 @@ wordpress 博客的模板主题 ，可查看在线博客<http://www.xjsxj.com/gi
 #### Fancybox插件: <http://fancybox.net/>
 
 #### TimThumb – PHP Image Resizer ： <http://www.binarymoon.co.uk/projects/timthumb/>
+
+
+网站全图： the girl story~~  欣然的多彩生活
+
+需求：
+家人，朋友，同事的关心~
+
+视觉上metro ui的风格：
+
+演示下编写文章成果~
+
+
+
+
+
+
+
