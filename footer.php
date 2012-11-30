@@ -8,7 +8,7 @@
                 <ul id="menu-footer-nav" class="menu">
                     <li><a href="#girlwithacamera.co.uk/about/">About</a></li>
                     <li><a href="#girlwithacamera.co.uk/contact/">Contact</a></li>
-                    <li><a href="/feed">RSS Feed</a></li>
+                    <li><a href="<?php bloginfo('url'); ?>/feed">RSS Feed</a></li>
                 </ul>
                 <p>© 2012 xujia. All Rights Reserved.</p>
             </nav>
