@@ -1,7 +1,7 @@
 the-girl-story
 ==============
 
-wordpress 博客的模板主题 ，可查看在线博客<http://www.xjsxj.com/girl/>
+wordpress 博客的模板主题 ，可查看在线博客<http://www.xjsxj.cn/girl/>
 
 ## 一、主题截屏：
 
