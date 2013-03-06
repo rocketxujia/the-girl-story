@@ -55,7 +55,7 @@ wp_footer();
 
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-35130132-1']);
-    _gaq.push(['_setDomainName', 'xjsxj.com']);
+    _gaq.push(['_setDomainName', '<?php bloginfo('url'); ?>']);
     _gaq.push(['_trackPageview']);
 
     (function() {
